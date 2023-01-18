@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>RSB - Comunicação na Imagem</title>
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="index.css" />
+
+    <script defer src="./jquery/jquery-3.6.1.min.js"></script>
+    <script defer src="./bootstrap/js/bootstrap.min.js"></script>
+    <script defer src="renderer.js"></script>
+  </head>
+  <body class="bg-black">
+    <section class="d-flex flex-column justify-content-center">
+      <img src="./assets/img/logo.png" alt="Logo RSB" class="logo" />
+      <div class="section-buttons-dashboard"> 
+        <!-- Button trigger modal -->
+        <button type="button" class="buttons-dashboard" data-bs-toggle="modal" data-bs-target="#adminButton">
+          Admin
+        </button>
+        <!-- modal -->
+        <div class="modal fade" id="adminButton" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Login</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <!-- MODAL BODY  -->
+              <div class="modal-body">
+                <form>
+                  <div class="form-group">
+                    <label for="form-id">Id</label>
+                    <input type="text" class="form-control" id="form-id" placeholder="Digite o seu ID">
+                  </div>
+                  <div class="form-group">
+                    <label for="form-password">Password</label>
+                    <input type="password" class="form-control" id="form-password" placeholder="Digite a sua password">
+                  </div>
+                </form>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Fechar</button>
+                <button type="button" class="btn btn-primary">Aceder</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Button trigger modal -->
+        <button type="button" class="buttons-dashboard">
+          User
+        </button>
+    </section>
+    
+  </body>
+</html>
